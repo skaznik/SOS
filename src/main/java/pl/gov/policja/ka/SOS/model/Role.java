@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Data
-@Table(name = "roles")
+@Table(name = "sos_roles")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

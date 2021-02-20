@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Setter
 @Data
 @Entity
-@Table(name = "status")
+@Table(name = "sos_status")
 public class Status {
 
     @Id

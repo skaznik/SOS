@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "type")
+@Table(name = "sos_type")
 public class Type {
 
     @Id

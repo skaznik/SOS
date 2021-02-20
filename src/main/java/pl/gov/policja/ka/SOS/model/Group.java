@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.Set;
 
@@ -13,8 +12,9 @@ import java.util.Set;
 @Setter
 @Entity
 @Data
-@Table(name = "group")
+@Table(name = "sos_grup")
 public class Group {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "group_id")
@@ -26,5 +26,4 @@ public class Group {
     @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(name = "group_type", joinColumns = @JoinColumn(name = "group_id"), inverseJoinColumns = @JoinColumn(name = "type_id"))
     private Set<Type> types;
-
 }
